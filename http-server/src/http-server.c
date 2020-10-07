@@ -96,6 +96,6 @@ int main(int argc, char **argv)
     write(clientfd, Response, strlen(Response));
     close(clientfd);
   }
-
+  close(sockfd);
   return 0;
 }
